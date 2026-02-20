@@ -77,6 +77,10 @@ jobs:
   opa:
     name: OPA Policy Evaluation
     runs-on: ubuntu-latest
+    
+    env:
+      AWS_EC2_METADATA_DISABLED: "true"
+
 
     steps:
       - name: Checkout code
