@@ -142,6 +142,9 @@ jobs:
   validate:
     name: Terraform Validate
     runs-on: ubuntu-latest
+    
+  env:
+      AWS_EC2_METADATA_DISABLED: "true"
 
     steps:
       - name: Checkout code
