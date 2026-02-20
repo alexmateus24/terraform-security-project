@@ -20,7 +20,7 @@ jobs:
   # ==========================================
   # Checkov - CIS Benchmark Scanning
   # ==========================================
-  checkov:
+checkov:
     name: Checkov Security Scan
     runs-on: ubuntu-latest
 
