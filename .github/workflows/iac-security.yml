@@ -145,8 +145,8 @@ validate:
     
 env:
       AWS_EC2_METADATA_DISABLED: "true"
-
-    steps:
+      
+steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
