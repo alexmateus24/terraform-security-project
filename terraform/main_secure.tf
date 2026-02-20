@@ -1,20 +1,6 @@
 # QuantumTrade Infrastructure - SECURE VERSION
 # Uses security-hardened modules
 
-terraform {
-  required_version = ">= 1.0.0"
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = var.aws_region
-}
-
 # Logging bucket for S3 access logs
 module "log_bucket" {
   source = "./modules/s3"
